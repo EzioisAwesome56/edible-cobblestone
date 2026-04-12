@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "edible-cobblestone:sodium_bowl"
+  },
+  "result": "edible-cobblestone:super_sodium_bowl",
+  "experience": 0.1,
+  "cookingtime": 10
+}

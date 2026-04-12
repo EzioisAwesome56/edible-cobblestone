@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "edible-cobblestone:item/obsidi-os-bowl-milk"
+  }
+}

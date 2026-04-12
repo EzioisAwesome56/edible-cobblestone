@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#R#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "R": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "edible-cobblestone:obsidian_os",
+    "count": 7
+  }
+}

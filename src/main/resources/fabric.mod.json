@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "edible-cobblestone",
+	"version": "${version}",
+	"name": "Edible Cobblestone",
+	"description": "Finally, now you can live your dreams of eating cobblestone (and other stones) in minecraft, with the help of this simple mod",
+	"authors": [
+		"EzioisAwesome56"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/edible-cobblestone/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alysoft.ediblecobble.EdibleCobblestone"
+		],
+		"client": [
+			"com.alysoft.ediblecobble.client.EdibleCobblestoneClient"
+		]
+	},
+	"mixins": [
+		"edible-cobblestone.mixins.json",
+		{
+			"config": "edible-cobblestone.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

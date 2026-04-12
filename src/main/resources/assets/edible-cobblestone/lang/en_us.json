@@ -1,0 +1,18 @@
+{
+  "item.edible-cobblestone.waste": "Waste",
+  "item.edible-cobblestone.nuclear_waste": "Nuclear Waste",
+  "item.edible-cobblestone.green_waste": "Green Waste",
+  "item.edible-cobblestone.bread_bowl": "Bread Bowl",
+  "item.edible-cobblestone.cobblestone_os": "Box of CobblOs",
+  "item.edible-cobblestone.obsidian_os": "Box of ObsidOs",
+  "item.edible-cobblestone.cobblestone_bowl": "Bowl of CobblOs with Nuclear Waste",
+  "item.edible-cobblestone.obsidian_bowl": "Bowl of ObsidiOs with Nuclear Waste",
+  "item.edible-cobblestone.lava_bowl": "Bowl of Lava",
+  "item.edible-cobblestone.sodium_bowl": "Bowl of Sodium Sulfate",
+  "item.edible-cobblestone.super_sodium_bowl": "Bowl of Strong Sodium Sulfate",
+  "item.edible-cobblestone.duper_sodium_bowl": "Bowl of Extra Strong Sodium Sulfate",
+  "item.edible-cobblestone.cobblestone_bowl_milk": "Bowl of CobblOs with Milk",
+  "item.edible-cobblestone.cobblestone_bowl_lava": "Bowl of CobblOs with Lava",
+  "item.edible-cobblestone.obsidian_bowl_milk": "Bowl of ObsidiOs with Milk",
+  "item.edible-cobblestone.obsidian_bowl_lava": "Bowl of ObsidiOs with Lava"
+}

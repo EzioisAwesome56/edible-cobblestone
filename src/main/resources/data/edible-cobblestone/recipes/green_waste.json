@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "edible-cobblestone:waste"
+    }
+  ],
+  "result": {
+    "item": "edible-cobblestone:green_waste",
+    "count": 2
+  }
+}
