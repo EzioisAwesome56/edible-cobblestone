@@ -47,7 +47,7 @@ public class ItemsMixin {
                     .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 2), 1.0f)
                     .build()));
             EdibleCobblestone.LOGGER.info("Stupid 1.8 rocks are now edible");
-        } else if (block == Blocks.DEEPSLATE){
+        } else if (block == Blocks.DEEPSLATE || block == Blocks.COBBLED_DEEPSLATE){
             funny = new BlockItem(block, new FabricItemSettings().food(new FoodComponent.Builder()
                     .alwaysEdible()
                     .hunger(5)
@@ -56,6 +56,15 @@ public class ItemsMixin {
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 20, 2), 0.6f)
                     .build()));
             EdibleCobblestone.LOGGER.info("Deepslate is now edible");
+        } else if (block == Blocks.NETHERRACK){
+            funny = new BlockItem(block, new FabricItemSettings().food(new FoodComponent.Builder()
+                    .alwaysEdible()
+                    .hunger(4)
+                    .saturationModifier(2.0f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 1), 0.8f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 30 * 20, 1), 1.0f)
+                    .build()));
+            EdibleCobblestone.LOGGER.info("Netherrack is now edible");
         }
         // check if we need to do anything
         if (funny != null){

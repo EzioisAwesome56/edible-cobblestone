@@ -27,7 +27,7 @@ public class ModItems {
     public static final Item COBBLESTONE_BOWL_NUCLEAR = register(new CobblosBowlItem(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder()
             .hunger(7)
             .saturationModifier(2.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 20), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 2), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 180 * 20, 10), 0.6f)
             .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 3 * 20, 1), 0.5f).build()), 0), "cobblestone_bowl");
 
@@ -55,14 +55,14 @@ public class ModItems {
             .hunger(8)
             .saturationModifier(2.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 30 * 20, 4), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 2), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 25 * 20, 1), 0.4f)
             .build()), 1), "obsidian_bowl_milk");
     public static final Item OBSIDIAN_BOWL_LAVA = register(new CobblosBowlItem(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder()
             .hunger(8)
             .saturationModifier(2.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 30 * 20, 1), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 4), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 3), 1.0f)
             .build()), 2), "obsidian_bowl_lava");
 
     public static final Item LAVA_BOWL = register(new LavaBowlItem(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder()
