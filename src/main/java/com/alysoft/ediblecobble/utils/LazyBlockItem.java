@@ -3,19 +3,21 @@ package com.alysoft.ediblecobble.utils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 
-public class LazyBlockItem extends BlockItem {
-    public LazyBlockItem(Block block, Settings settings) {
-        super(block, settings);
-    }
+import java.util.Set;
 
-    @Override
-    protected boolean canPlace(ItemPlacementContext context, BlockState state) {
-        // never be able to place this block
-        return false;
+public class LazyBlockItem extends Item {
+    private String translate_key;
+    public LazyBlockItem(Block block, Settings settings) {
+        super(settings);
+        this.translate_key = block.getTranslationKey();
+    }
+    public LazyBlockItem(Settings set){
+        super(set);
     }
 
     // Hijack getname to make it into an edible version, while retaining
@@ -24,7 +26,7 @@ public class LazyBlockItem extends BlockItem {
     @Override
     public Text getName(ItemStack stack) {
         // get base name already
-        String base_name = super.getName(stack).getString();
+        String base_name = Text.translatable(this.translate_key).getString();
         // get the prefix for block items
         String prefix = Text.translatable("text.edible-cobblestone.prefix").getString();
         // combine the two

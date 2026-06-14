@@ -21,7 +21,7 @@ public class ItemsMixin {
     @Inject(method = "register(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;", at = @At(value = "HEAD"), cancellable = true)
     private static void registerHijack(Block block, CallbackInfoReturnable<Item> cir){
         // test if block is cobblestone
-        BlockItem funny = null;
+        LazyBlockItem funny = null;
         String name = null;
         if (block == Blocks.COBBLESTONE) {
             // make it edible

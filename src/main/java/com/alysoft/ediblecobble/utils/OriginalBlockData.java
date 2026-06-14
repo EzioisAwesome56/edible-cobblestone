@@ -5,11 +5,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 public class OriginalBlockData {
-    private BlockItem item;
+    private LazyBlockItem item;
     private Block block;
     private String name;
 
-    public OriginalBlockData(BlockItem i, Block b, String n){
+    public OriginalBlockData(LazyBlockItem i, Block b, String n){
         this.item = i;
         this.block = b;
         this.name = n;
@@ -19,7 +19,7 @@ public class OriginalBlockData {
         return this.block;
     }
 
-    public BlockItem getItem() {
+    public LazyBlockItem getItem() {
         return this.item;
     }
 
