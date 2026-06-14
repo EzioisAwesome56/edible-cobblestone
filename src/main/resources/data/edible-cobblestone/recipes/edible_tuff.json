@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+	{
+		"item": "minecraft:tuff"
+    }
+  ],
+  "result": {
+    "item": "edible-cobblestone:edible_tuff",
+    "count": 1
+  }
+}

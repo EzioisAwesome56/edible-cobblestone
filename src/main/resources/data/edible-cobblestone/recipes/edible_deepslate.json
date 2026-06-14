@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+	  "item": "minecraft:deepslate"
+  }  
+  ],
+  "result": {
+    "item": "edible-cobblestone:edible_deepslate",
+    "count": 1
+  }
+}

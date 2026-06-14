@@ -14,5 +14,6 @@
   "item.edible-cobblestone.cobblestone_bowl_milk": "Bowl of CobblOs with Milk",
   "item.edible-cobblestone.cobblestone_bowl_lava": "Bowl of CobblOs with Lava",
   "item.edible-cobblestone.obsidian_bowl_milk": "Bowl of ObsidiOs with Milk",
-  "item.edible-cobblestone.obsidian_bowl_lava": "Bowl of ObsidiOs with Lava"
+  "item.edible-cobblestone.obsidian_bowl_lava": "Bowl of ObsidiOs with Lava",
+  "text.edible-cobblestone.prefix": "Edible"
 }

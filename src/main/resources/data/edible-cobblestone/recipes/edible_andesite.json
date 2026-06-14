@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+	  "item": "minecraft:andesite"
+    }
+  ],
+  "result": {
+    "item": "edible-cobblestone:edible_andesite",
+    "count": 1
+  }
+}

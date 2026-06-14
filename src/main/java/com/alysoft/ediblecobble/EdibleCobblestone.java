@@ -20,6 +20,7 @@ public class EdibleCobblestone implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         ModItems.init_items();
+        ModItems.convertMcToFoodItems();
 		LOGGER.info("It is time to eat rocks and become a rock!");
 	}
 }

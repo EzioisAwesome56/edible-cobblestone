@@ -1,8 +1,10 @@
 package com.alysoft.ediblecobble.items;
 
 import com.alysoft.ediblecobble.EdibleCobblestone;
+import com.alysoft.ediblecobble.utils.OriginalBlockData;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -33,7 +35,7 @@ public class ModItems {
 
     public static final Item COBBLESTONE_BOWL_MILK = register(new CobblosBowlItem(new FabricItemSettings().maxCount(64).food(new FoodComponent.Builder()
             .hunger(11)
-            .saturationModifier(5.0f)
+            .saturationModifier(1.7f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 20, 0), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 40 * 20, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20, 1), 1.0f).build()), 1), "cobblestone_bowl_milk");
@@ -87,6 +89,25 @@ public class ModItems {
         Item registeredItem = Registry.register(Registries.ITEM, itemID, item);
         // Return the registered item!
         return registeredItem;
+    }
+
+    private static final ArrayList<OriginalBlockData> mcblocks = new ArrayList<>();
+    public static void addMcBlockToList(OriginalBlockData b){
+        // put it in the list
+        mcblocks.add(b);
+    }
+    public static void convertMcToFoodItems(){
+        // create a new item for each vanilla rock added to the list
+        for (OriginalBlockData og : mcblocks){
+            // get the string name of the block
+            String name = og.getName();
+            // feed it the block name with a prefix
+            Item theitem = register(og.getItem(), "edible_" + name);
+            // put them in the creative tab
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
+                content.add(theitem);
+            });
+        }
     }
 
     public static void init_items() {

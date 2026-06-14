@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+	  "item": "minecraft:mossy_cobblestone"
+  }
+    
+  ],
+  "result": {
+    "item": "edible-cobblestone:edible_mossy_cobblestone",
+    "count": 1
+  }
+}
